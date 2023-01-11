@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "1a8686e0-1528-48f2-b3ef-c27415ea0518",
+		"name": "Flask API CURL Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Flask Simple API | GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:105/programming_languages/Java",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "105",
+					"path": [
+						"programming_languages",
+						"Java"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flask Simple API | Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Java\", \"publication_year\": 1995, \"contribution\": \"Object-oriented programming language.\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/programming_languages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"programming_languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flask Simple API | PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"contribution\": \"The JVM\"}"
+				},
+				"url": {
+					"raw": "http://0.0.0.0:105/programming_languages/Java",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "105",
+					"path": [
+						"programming_languages",
+						"Java"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
